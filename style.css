@@ -46,6 +46,9 @@ body {
     line-height: 1.5;
     width: 100vw;
     height: 100vh;
+    display: flex;
+	justify-content: center;
+    align-items: center;
 }
 
 /* Coustom text formating classes */
@@ -72,12 +75,7 @@ body {
     width: clamp(320px, 87%, 450px);
     background: #fff;
     border-radius: var(--br);
-    overflow: hidden;
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     box-shadow: 0 1rem 2rem -2rem var(--clr-neutral-desaturated-blue);
 }
 

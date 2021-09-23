@@ -27,13 +27,14 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [my-order-summary-component.netlify.app](https://my-order-summary-component.netlify.app/)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
 ### Built with
 
 - CSS custom properties
+- CSS Flexbox
 - CSS Grid
 - CSS logical function
 - Mobile-first workflow
