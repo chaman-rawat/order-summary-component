@@ -1,0 +1,175 @@
+/* Importing fonts [Red Hat Display]*/
+@import url(https://fonts.google.com/specimen/Red+Hat+Display);
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary colors */
+    --clr-primary-pale-blue: hsl(225, 100%, 94%);
+    --clr-primary-bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral colors */
+    --clr-neutral-very-pale-blue: hsl(225, 100%, 98%);
+    --clr-neutral-desaturated-blue: hsl(224, 23%, 55%);
+    --clr-neutral-dark-blue: hsl(223, 47%, 23%);
+
+    /* Font family */
+    --ff-ss:  sans-serif, "Red Hat Display";
+
+    /* border radius */
+    --br: 1em;
+
+    /* padding */
+    --padding: 1.5rem;
+}
+
+body,
+h1,
+h2,
+p,
+input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-weight: unset;
+    font-size: unset;
+}
+
+body {
+    background: url(/images/pattern-background-mobile.svg) no-repeat;
+    background-size: cover;
+    background-color: var(--clr-primary-pale-blue);
+    font-family: var(--ff-ss);
+    font-size: 16px;
+    line-height: 1.5;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Coustom text formating classes */
+
+.color-neutral-desaturated-blue {
+    color: var(--clr-neutral-desaturated-blue);
+}
+
+.bold-700 {
+    font-weight: 700;
+}
+
+.bold-900 {
+    font-weight: 900;
+}
+
+.link:hover {
+    cursor: pointer;
+}
+
+/* Elements stylings */
+
+.card {
+    width: clamp(320px, 87%, 450px);
+    background: #fff;
+    border-radius: var(--br);
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 1rem 2rem -2rem var(--clr-neutral-desaturated-blue);
+}
+
+.card-poster img {
+    width: 100%;
+}
+
+.card-information {
+    padding: var(--padding)  var(--padding);
+}
+
+.card-information > *:not(:first-child):not(:last-child) {
+    margin-bottom: var(--padding);
+}
+
+.card-title {
+    color: var(--clr-neutral-dark-blue);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.card-description {
+    padding-inline: 0.5em;
+}
+
+.card-plans {
+    background: var(--clr-neutral-very-pale-blue);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    padding: calc(var(--padding) - 0.5em);
+    border-radius: calc(var(--br) * 0.7);
+}
+
+.card-plans > div {
+    text-align: left;
+}
+
+.change-link {
+    color: var(--clr-primary-bright-blue);
+    text-decoration: underline;
+    font-size: 0.9rem;
+}
+
+.change-link:hover {
+    text-decoration: unset;
+    opacity: 0.7;
+}
+
+.card-payment {
+    background: var(--clr-primary-bright-blue);
+    color: #fff;
+    font-family: var(--ff-ss);
+    font-size: 0.9rem;
+    padding: 1rem;
+    width: 100%;
+    border-radius: calc(var(--br) * 0.7);
+    box-shadow: 0 1rem 2rem -1rem var(--clr-neutral-desaturated-blue);
+}
+
+.card-payment:hover {
+    opacity: 0.7;
+}
+
+.card-cancel {
+    font-size: 0.8rem;
+}
+
+.cancel-link:hover {
+    color: var(--clr-neutral-dark-blue);
+}
+
+@media (min-width: 400px) {
+    :root {
+        --padding: 2rem;
+    }
+
+    body {
+        background: url(/images/pattern-background-desktop.svg) no-repeat;
+        background-size: contain;
+        background-color: var(--clr-primary-pale-blue);
+    }
+
+    .card-title {
+        font-size: 1.6rem;
+    }
+
+    .card-information {
+        padding: calc(var(--padding) + 0.5rem) calc(var(--padding) + 1rem);
+    }
+
+    .card-information > *:not(:first-child):not(:last-child) {
+        margin-bottom: calc(var(--padding) - 0.2rem);
+    }
+}
