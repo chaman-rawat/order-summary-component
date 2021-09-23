@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://my-order-summary-component.netlify.app/)
+- Live Site URL: [my-order-summary-component.netlify.app](https://my-order-summary-component.netlify.app/)
 
 ## My process
 
