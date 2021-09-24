@@ -76,6 +76,7 @@ body {
     background: #fff;
     border-radius: var(--br);
     text-align: center;
+    overflow: hidden;
     box-shadow: 0 1rem 2rem -2rem var(--clr-neutral-desaturated-blue);
 }
 
